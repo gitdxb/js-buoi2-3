@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài Tập buổi 2-3</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand h" href="#">Bài tập JS buổi 2,3</a>
+        </div>
+    </nav>
+  <section class="project container py-1 my-5">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="bai-1" data-toggle="tab" href="#bai1" role="tab" aria-controls="Bài 1" aria-selected="true">📒 Bài 1</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-2" data-toggle="tab" href="#bai2" role="tab" aria-controls="Bài 2" aria-selected="false">📒 Bài 2</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-3" data-toggle="tab" href="#bai3" role="tab" aria-controls="Bài 3" aria-selected="false">📒 Bài 3</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-4" data-toggle="tab" href="#bai4" role="tab" aria-controls="Bài 4" aria-selected="false">📒 Bài 4</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-5" data-toggle="tab" href="#bai5" role="tab" aria-controls="Bài 5" aria-selected="false">📒 Bài 5</a>
+          </li>
+      </ul>
+      
+      <div class="tab-content">
+        <!-- Bai 1 -->
+        <div class="tab-pane active" id="bai1" role="tabpanel" aria-labelledby="bai-1">
+            <div class="col-6 py-5 my-2">
+                <h2>Tính tiền lương nhân viên</h2>
+                <p>Công thức: Lương = Lương 1 ngày * số ngày làm</p>
+                <form>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="ngayCong" placeholder="Nhập lương một ngày">
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="soNgayLam" placeholder="Số ngày bạn đã làm">
+                  </div>
+                  <button id="btnLuong" type="button" class="btn btn-success">Tính lương</button>
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>Kết quả: </span><span id="kqLuong"></span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Bai 2 -->
+        <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="bai-2">
+            <div class="col-6 py-5 my-2">
+                <h2>Tính giá trị trung bình</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="so1">Số 1</label>
+                    <input type="number" class="form-control" id="so1">
+                  </div>
+                  <div class="form-group">
+                    <label for="so2">Số 2</label>
+                    <input type="number" class="form-control" id="so2">
+                  </div>
+                  <div class="form-group">
+                    <label for="so3">Số 3</label>
+                    <input type="number" class="form-control" id="so3">
+                  </div>
+                  <div class="form-group">
+                    <label for="so4">Số 4</label>
+                    <input type="number" class="form-control" id="so4">
+                  </div>
+                  <div class="form-group">
+                    <label for="so5">Số 5</label>
+                    <input type="number" class="form-control" id="so5">
+                  </div>
+                  <button id="btnDTB" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>Kết quả: </span><span id="soTrungBinh"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 3 -->
+        <div class="tab-pane fade show" id="bai3" role="tabpanel" aria-labelledby="bai-3">
+            <div class="col-6 py-5 my-2">
+                <h2>Tính giá trị trung bình</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="so1">Số 1</label>
+                    <input type="number" class="form-control" id="so1">
+                  </div>
+                  <div class="form-group">
+                    <label for="so2">Số 2</label>
+                    <input type="number" class="form-control" id="so2">
+                  </div>
+                  <div class="form-group">
+                    <label for="so3">Số 3</label>
+                    <input type="number" class="form-control" id="so3">
+                  </div>
+                  <div class="form-group">
+                    <label for="so4">Số 4</label>
+                    <input type="number" class="form-control" id="so4">
+                  </div>
+                  <div class="form-group">
+                    <label for="so5">Số 5</label>
+                    <input type="number" class="form-control" id="so5">
+                  </div>
+                  <button id="btnDTB" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>Kết quả: </span><span id="soTrungBinh"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 4 -->
+        <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="bai-4">
+            <div class="col-6 py-5 my-2">
+                <h2>Quy đổi tiền</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="diemToan">Toán</label>
+                    <input type="number" class="form-control" id="diemToan">
+                  </div>
+                  <div class="form-group">
+                    <label for="diemLy">Lý</label>
+                    <input type="number" class="form-control" id="diemLy">
+                  </div>
+                  <div class="form-group">
+                    <label for="diemHoa">Hóa</label>
+                    <input type="number" class="form-control" id="diemHoa">
+                  </div>
+                  <button onclick="tinhDTB()" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>Kết quả: </span><span id="kqLuong"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 5 -->
+        <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="bai-5">
+            <div class="col-6 py-5 my-2">
+                <h2>Tính tổng 2 ký số</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="diemToan">Toán</label>
+                    <input type="number" class="form-control" id="diemToan">
+                  </div>
+                  <div class="form-group">
+                    <label for="diemLy">Lý</label>
+                    <input type="number" class="form-control" id="diemLy">
+                  </div>
+                  <div class="form-group">
+                    <label for="diemHoa">Hóa</label>
+                    <input type="number" class="form-control" id="diemHoa">
+                  </div>
+                  <button onclick="tinhDTB()" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>Kết quả: </span><span id="kqLuong"></span>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <script>
+        $(function () {
+          $('#myTab li:last-child a').tab('show')
+        })
+      </script>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
