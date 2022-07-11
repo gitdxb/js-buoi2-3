@@ -97,33 +97,17 @@
         <!-- Bai 3 -->
         <div class="tab-pane fade show" id="bai3" role="tabpanel" aria-labelledby="bai-3">
             <div class="col-6 py-5 my-2">
-                <h2>Tính giá trị trung bình</h2>
+                <h2>Quy đổi tiền USD => VND</h2>
                 <form>
                   <div class="form-group">
-                    <label for="so1">Số 1</label>
-                    <input type="number" class="form-control" id="so1">
+                    <label for="soTienUSD">Số tiền cần đổi (USD)</label>
+                    <input type="number" class="form-control" id="soTienUSD" placeholder="Nhập số tiền ở đây">
                   </div>
-                  <div class="form-group">
-                    <label for="so2">Số 2</label>
-                    <input type="number" class="form-control" id="so2">
-                  </div>
-                  <div class="form-group">
-                    <label for="so3">Số 3</label>
-                    <input type="number" class="form-control" id="so3">
-                  </div>
-                  <div class="form-group">
-                    <label for="so4">Số 4</label>
-                    <input type="number" class="form-control" id="so4">
-                  </div>
-                  <div class="form-group">
-                    <label for="so5">Số 5</label>
-                    <input type="number" class="form-control" id="so5">
-                  </div>
-                  <button id="btnDTB" type="button" class="btn btn-success">Tính</button>
+                  <button id="btnDoiTien" type="button" class="btn btn-success">Tính</button>
         
                 </form>
                 <div class="alert alert-info my-3">
-                    <span>Kết quả: </span><span id="soTrungBinh"></span>
+                    <span>Kết quả: </span><span id="soTienVND"></span><span> VND</span>
                 </div>
             </div>
         </div>
@@ -131,25 +115,25 @@
         <!-- Bai 4 -->
         <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="bai-4">
             <div class="col-6 py-5 my-2">
-                <h2>Quy đổi tiền</h2>
+                <h2>Tính diện tích, chu vi HCN</h2>
+                <ul>
+                  <li>Diện tích: dài x rộng</li>
+                  <li>Chu vi: (dài + rộng) x 2</li>
+                </ul>
                 <form>
                   <div class="form-group">
-                    <label for="diemToan">Toán</label>
-                    <input type="number" class="form-control" id="diemToan">
+                    <label for="chieuDai">Chiều dài</label>
+                    <input type="number" class="form-control" id="chieuDai">
                   </div>
                   <div class="form-group">
-                    <label for="diemLy">Lý</label>
-                    <input type="number" class="form-control" id="diemLy">
+                    <label for="chieuRong">Chiều Rộng</label>
+                    <input type="number" class="form-control" id="chieuRong">
                   </div>
-                  <div class="form-group">
-                    <label for="diemHoa">Hóa</label>
-                    <input type="number" class="form-control" id="diemHoa">
-                  </div>
-                  <button onclick="tinhDTB()" type="button" class="btn btn-success">Tính</button>
+                  <button id="btnHCN" type="button" class="btn btn-success">Tính</button>
         
                 </form>
                 <div class="alert alert-info my-3">
-                    <span>Kết quả: </span><span id="kqLuong"></span>
+                    <span>Kết quả: </span><span id="kqChuVi"></span><span id="kqDienTich"></span>
                 </div>
             </div>
         </div>
@@ -160,22 +144,14 @@
                 <h2>Tính tổng 2 ký số</h2>
                 <form>
                   <div class="form-group">
-                    <label for="diemToan">Toán</label>
-                    <input type="number" class="form-control" id="diemToan">
+                    <label for="nhapSo">Nhập số có 2 chữ số</label>
+                    <input type="number" class="form-control" id="nhapSo">
                   </div>
-                  <div class="form-group">
-                    <label for="diemLy">Lý</label>
-                    <input type="number" class="form-control" id="diemLy">
-                  </div>
-                  <div class="form-group">
-                    <label for="diemHoa">Hóa</label>
-                    <input type="number" class="form-control" id="diemHoa">
-                  </div>
-                  <button onclick="tinhDTB()" type="button" class="btn btn-success">Tính</button>
+                  <button id="btnTinhTong" type="button" class="btn btn-success">Tính</button>
         
                 </form>
                 <div class="alert alert-info my-3">
-                    <span>Kết quả: </span><span id="kqLuong"></span>
+                    <span>Kết quả: </span><span id="kq2ChuSo"></span>
                 </div>
             </div>
         </div>
